@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#311042" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.07)" />
+      <stop offset="100%" stop-color="rgba(255, 255, 255, 0.02)" />
+    </linearGradient>
+
+    <!-- Glowing effect -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseOrb {
+      0% { transform: scale(1) translate(0, 0); opacity: 0.4; }
+      50% { transform: scale(1.15) translate(-20px, 15px); opacity: 0.7; }
+      100% { transform: scale(1) translate(0, 0); opacity: 0.4; }
+    }
+    @keyframes floatCard {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    @keyframes dashFlow {
+      0% { stroke-dashoffset: 100; }
+      100% { stroke-dashoffset: 0; }
+    }
+    .orb1 { animation: pulseOrb 8s ease-in-out infinite; transform-origin: 200px 100px; }
+    .orb2 { animation: pulseOrb 10s ease-in-out infinite 2s; transform-origin: 1000px 280px; }
+    .floating-card { animation: floatCard 6s ease-in-out infinite; }
+    .floating-card-delay { animation: floatCard 7s ease-in-out infinite 1.5s; }
+    .flow-line { stroke-dasharray: 8 8; animation: dashFlow 20s linear infinite; }
+    .title-text { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-weight: 800; fill: #ffffff; }
+    .subtitle-text { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-weight: 500; fill: #cbd5e1; }
+    .badge-text { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-weight: 600; fill: #f8fafc; font-size: 13px; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Animated Dynamic Background Orbs -->
+  <circle class="orb1" cx="200" cy="90" r="140" fill="#6366f1" opacity="0.3" filter="url(#glow)" />
+  <circle class="orb2" cx="1020" cy="270" r="160" fill="#ec4899" opacity="0.25" filter="url(#glow)" />
+
+  <!-- Dynamic Geometric Grid Background -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <path d="M0 60 H1200 M0 120 H1200 M0 180 H1200 M0 240 H1200 M0 300 H1200" />
+    <path d="M150 0 V360 M300 0 V360 M450 0 V360 M600 0 V360 M750 0 V360 M900 0 V360 M1050 0 V360" />
+  </g>
+
+  <!-- Dynamic Connecting Flow Lines (Background Tech Vectors) -->
+  <path class="flow-line" d="M 100 280 Q 300 320 500 280 T 900 310 T 1150 260" fill="none" stroke="url(#accentGrad)" stroke-width="2" opacity="0.5" />
+  <path class="flow-line" d="M 50 80 Q 400 30 700 80 T 1100 50" fill="none" stroke="url(#cyanGrad)" stroke-width="1.5" opacity="0.4" />
+
+  <!-- Floating Decorative Cards in Background (Behind Text) -->
+  <g class="floating-card" opacity="0.35">
+    <rect x="940" y="45" width="190" height="85" rx="12" fill="url(#cardBg)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
+    <text x="960" y="75" fill="#a855f7" font-family="sans-serif" font-weight="bold" font-size="14">🏥 Healthcare CRM</text>
+    <text x="960" y="98" fill="#94a3b8" font-family="sans-serif" font-size="11">Veeva • CRMSalud • Linka AI</text>
+  </g>
+
+  <g class="floating-card-delay" opacity="0.35">
+    <rect x="70" y="220" width="200" height="85" rx="12" fill="url(#cardBg)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
+    <text x="90" y="250" fill="#06b6d4" font-family="sans-serif" font-weight="bold" font-size="14">🏦 Financial &amp; Banking</text>
+    <text x="90" y="273" fill="#94a3b8" font-family="sans-serif" font-size="11">nCino • Salesforce FSC</text>
+  </g>
+
+  <!-- Foreground Title and Content (Ensured Clear Visibility) -->
+  <!-- Top Tag / Pill -->
+  <g transform="translate(60, 48)">
+    <rect width="280" height="32" rx="16" fill="url(#accentGrad)" />
+    <text x="140" y="21" class="badge-text" text-anchor="middle">🚀 CURATED ECOSYSTEM 2026</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="60" y="135" class="title-text" font-size="44" filter="drop-shadow(0px 4px 12px rgba(0,0,0,0.6))">
+    Awesome Vertical Industry CRM
+  </text>
+
+  <!-- Subtitle -->
+  <text x="60" y="178" class="subtitle-text" font-size="20">
+    Top Industry-Specific SaaS Platforms &amp; Self-Hosted Open-Source Solutions
+  </text>
+
+  <!-- Category Badges / Pills in Foreground -->
+  <g transform="translate(60, 215)">
+    <!-- Pill 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="130" height="34" rx="8" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.25)" stroke-width="1" />
+      <text x="65" y="22" class="badge-text" text-anchor="middle">⚕️ Healthcare</text>
+    </g>
+    <!-- Pill 2 -->
+    <g transform="translate(142, 0)">
+      <rect width="130" height="34" rx="8" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.25)" stroke-width="1" />
+      <text x="65" y="22" class="badge-text" text-anchor="middle">⚖️ Legal &amp; Law</text>
+    </g>
+    <!-- Pill 3 -->
+    <g transform="translate(284, 0)">
+      <rect width="145" height="34" rx="8" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.25)" stroke-width="1" />
+      <text x="72" y="22" class="badge-text" text-anchor="middle">🏗️ Construction</text>
+    </g>
+    <!-- Pill 4 -->
+    <g transform="translate(441, 0)">
+      <rect width="130" height="34" rx="8" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.25)" stroke-width="1" />
+      <text x="65" y="22" class="badge-text" text-anchor="middle">🏢 Real Estate</text>
+    </g>
+    <!-- Pill 5 -->
+    <g transform="translate(583, 0)">
+      <rect width="130" height="34" rx="8" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.25)" stroke-width="1" />
+      <text x="65" y="22" class="badge-text" text-anchor="middle">🤝 Non-Profits</text>
+    </g>
+    <!-- Pill 6 -->
+    <g transform="translate(725, 0)">
+      <rect width="130" height="34" rx="8" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.25)" stroke-width="1" />
+      <text x="65" y="22" class="badge-text" text-anchor="middle">🛡️ Insurance</text>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Bar -->
+  <rect x="60" y="280" width="1080" height="4" rx="2" fill="url(#accentGrad)" />
+
+  <text x="60" y="315" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="500">
+    Updated October 2026 • Verified SaaS Commercial &amp; Open Source Repositories
+  </text>
+</svg>
