@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Vertical-Industry-CRM"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Vertical-Industry-CRM?style=flat-square&color=blue" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Vertical-Industry-CRM"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Vertical-Industry-CRM?style=flat-square&color=blue" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Vertical-Industry-CRM/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Vertical-Industry-CRM?style=flat-square&color=orange" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Vertical-Industry-CRM/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Vertical-Industry-CRM?style=flat-square&color=green" alt="License" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -32,7 +32,7 @@ This list aggregates top **enterprise SaaS platforms** (Salesforce Industries, V
 
 - [☁️ SaaS / Commercial Platforms](#️-saas--commercial-platforms)
 - [💻 Open-Source GitHub Projects](#-open-source-github-projects)
-  - [⚡ Top Ranked Repositories (Sorted by Star Count)](#-top-ranked-repositories-sorted-by-star-count)
+  - [⚡ Top Ranked Repositories (Sorted by Stars_Count)](#-top-ranked-repositories-sorted-by-star-count)
   - [🏢 Vertical Industry Categories](#-vertical-industry-categories)
 - [📈 Star History](#-star-history)
 - [💖 Support & Sponsorship](#-support--sponsorship)
@@ -62,9 +62,9 @@ The global CRM market is projected to reach **$86.4 billion to $126.2 billion in
 
 ## 💻 Open-Source GitHub Projects
 
-Below is a curated list of top open-source vertical CRM repositories. All projects are sorted by **GitHub Star Count (descending)**, with social star badges linking directly to each repository's stargazers page.
+Below is a curated list of top open-source vertical CRM repositories. All projects are sorted by **GitHub Stars_Count (descending)**, with social Stars_Badges linking directly to each repository's stargazers page.
 
-### ⚡ Top Ranked Repositories (Sorted by Star Count)
+### ⚡ Top Ranked Repositories (Sorted by Stars_Count)
 
 1. **[Twenty CRM](https://github.com/twentyhq/twenty)** [<img src="https://img.shields.io/github/stars/twentyhq/twenty?style=social&color=white" alt="Twenty Stars"/>](https://github.com/twentyhq/twenty/stargazers)  
    🏢 **Modern Open-Source AI-Native CRM**, Apache-2.0 licensed (~58,100+ stars). Self-hosted alternative to Salesforce with customizable data models, enterprise extensibility, and vertical workflow triggers.
@@ -182,7 +182,7 @@ If you'd like to support ongoing updates and open-source research, consider spon
 
 1. Fork the repo.
 2. Add/edit entries in `README.md` following the existing format.
-3. Ensure open-source entries include proper GitHub links and star badges.
+3. Ensure open-source entries include proper GitHub links and Stars_Badges.
 4. Check out [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome) for more awesome list guidelines!
 5. Submit a Pull Request with a short explanation.
 
